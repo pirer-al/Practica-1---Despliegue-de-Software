@@ -22,5 +22,6 @@ jobs:
       - run: echo "They can also depend on one another..."
   job-4:
     runs-on: ubuntu-latest
+    needs: job-3
     steps:
       - run: echo "... to form a directed acyclic graph (DAG)"
